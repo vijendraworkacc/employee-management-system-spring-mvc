@@ -7,17 +7,23 @@
 <title>Login</title>
 </head>
 <body>
+	<%
+	String message = (String) request.getAttribute("message");
+	%>
+	<h1><%=message%></h1>
+	
 	<fieldset>
 		<form action="login" method="post">
 			<table border="10">
 				<tr>
 					<td>Enter employee id:</td>
-					<td><input type="text" placeholder="example TY001" name="empId"></td>
+					<td><input type="text" placeholder="example TY001"
+						name="empId"></td>
 				</tr>
 				<tr>
 					<td>Enter password:</td>
-					<td><input type="password" placeholder="example yy2u3h2793ry" name="password">
-					</td>
+					<td><input type="password" placeholder="example yy2u3h2793ry"
+						name="password"></td>
 				</tr>
 				<tr>
 					<td><button type="submit">LOGIN</button></td>

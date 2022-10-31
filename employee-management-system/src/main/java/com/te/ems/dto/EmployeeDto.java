@@ -1,7 +1,4 @@
-package com.te.ems.entity;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
+package com.te.ems.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,9 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-@Entity
-public class Employee {
-	@Id
+public class EmployeeDto {
 	private String empId;
 	private Integer empAge;
 	private String empEmail;

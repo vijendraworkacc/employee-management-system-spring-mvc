@@ -7,6 +7,18 @@
 <title>Delete</title>
 </head>
 <body>
+	<%
+	String message = (String) request.getAttribute("message");
+	%>
+
+	<%
+	if (message != null) {
+	%>
+	<h1><%=message%></h1>
+	<%
+	}
+	%>
+
 	<fieldset>
 		<form action="delete" method="post">
 			<table border="10">

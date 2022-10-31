@@ -12,12 +12,12 @@ public class EmsControllerV1 {
 
 	@RequestMapping(path = "/welcome")
 	public String welcome() {
-		return "/WEB-INF/views/welcome.jsp";
+		return "welcome";
 	}
 	
 	@RequestMapping(path = "/contact")
 	public String contact() {
-		return "/WEB-INF/views/contact.jsp";
+		return "contact";
 	}
 	
 }
